@@ -6,7 +6,7 @@ imageName="xxx_project_test";
 # 容器名
 containerName="xxx_project_test";
 # jenkins服务器开放的的前端访问端口
-port="80"
+port="8083"
 # 镜像中server暴露的端口号
 exposePort="9527"
 ``
