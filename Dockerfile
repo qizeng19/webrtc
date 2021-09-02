@@ -1,4 +1,4 @@
-FROM hub.c.163.com/public/nginx:latest
+FROM node:latest
 WORKDIR /app
 COPY . /app
 RUN ls
