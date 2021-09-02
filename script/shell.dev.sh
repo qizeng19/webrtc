@@ -2,13 +2,13 @@
 # 当前镜像版本号
 version="1.0.0";
 # 镜像名
-imageName="xxx_project_test";
+imageName="webrtc_test";
 # 容器名
-containerName="xxx_project_test";
+containerName="webrtc_test";
 # jenkins服务器开放的的前端访问端口
-port="5205"
+port="80"
 # 镜像中server暴露的端口号
-exposePort="8081"
+exposePort="9527"
 ``
 echo "--> yarn install"
 cd ..
@@ -16,6 +16,7 @@ sudo yarn install && sudo yarn build-dev
 
 echo "--> copy files shell.dev.sh"
 sudo cp -rf Dockerfile ./dist
+sudo cp -rf app.js ./dist
 cd ./dist
 
 echo "--> docker build"
