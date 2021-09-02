@@ -2,9 +2,9 @@
 # 当前镜像版本号
 version="1.0.0";
 # 镜像名
-imageName="webrtc_test";
+imageName="xxx_project_test";
 # 容器名
-containerName="webrtc_test";
+containerName="xxx_project_test";
 # jenkins服务器开放的的前端访问端口
 port="80"
 # 镜像中server暴露的端口号
