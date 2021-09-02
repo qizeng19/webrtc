@@ -1,0 +1,59 @@
+.shopList {
+  background-color: #ffffff;
+  padding: 0 30px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  .a-store{
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    section{
+      flex: 1;
+      text-align: left;
+
+      .store-name{
+        font-size: 32px;
+        font-weight: 600;
+        color: #333333;
+        line-height: 45px;
+        height: 45px;
+        margin-bottom: 5px;
+        .inline(580px);
+        .wrap-img {
+          display: inline-block;
+          vertical-align: top;
+          img{
+            // vertical-align: middle;
+            height: 22px;
+            width: 22px;
+            margin-right: 10px;
+          }
+        }
+      }
+      .store-location{
+        color: #666666;
+        font-size: 22px;
+        line-height: 30px;
+        display: flex;
+        margin-left: 32px;
+        //justify-content: space-around;
+        span:first-child {
+          flex: 1;
+        }
+      }
+    }
+  
+   
+ 
+  }
+}
+
+.inline(@width) {
+  overflow: hidden;/*超出部分隐藏*/
+  white-space: nowrap;/*不换行*/
+  text-overflow:ellipsis;/*超出部分省略号显示*/
+  width: @width;
+}

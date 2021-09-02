@@ -1,0 +1,62 @@
+.input-box {
+    background-color: #ffffff;
+    & /deep/ input:disabled{
+      background-color: transparent;
+    }
+    & /deep/ input{
+      text-overflow: ellipsis;
+    }
+    .input-box-item {
+        height: 88px;
+        line-height: 88px;
+        margin: 0 30px;
+        display: flex;
+        font-size: 30px;
+        justify-content: space-between;
+        &.border{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        label {
+            color: #000000;
+            .require{
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+        span {
+            color: red;
+        }
+
+        .wrap-select {
+            input[type=text] {
+                outline: 0;
+                height: 86px;
+                line-height: 86px;
+                border: 0;
+                display: inline-block;
+                text-align: right;
+                padding: 0;
+                margin: 0;
+                color: #666666;
+            }
+            [readonly="readonly"] {
+                pointer-events: none;
+              }
+            .wrap-img {
+                display: inline-block;
+
+                img {
+                    width: 32px;
+                    height: 32px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+.modal-mask {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}

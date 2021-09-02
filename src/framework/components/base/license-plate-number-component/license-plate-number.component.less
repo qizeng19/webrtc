@@ -1,0 +1,57 @@
+.license-plate-number{
+  //position: relative;
+  height: 40vh;
+  //width: 100vw;
+  //overflow: hidden;
+  //z-index: 100;
+  position: fixed;
+  bottom: 4PX;
+  width: 100%;
+  background-color: #D0D5D9;
+  padding-bottom: 4PX;
+  .close{
+    text-align: center;
+    padding: 20PX;
+    font-weight: 700;
+  }
+  ul{
+    padding: 0PX;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10PX;
+    li{
+      width: 30PX;
+      height: 43PX;
+      border-radius: 6PX;
+      text-align: center;
+      line-height: 43PX;
+      float: left;
+      background-color: #ffffff;
+      &.key-board-box{
+        //width: 100%;
+        width: 100PX;
+        height: 40PX;
+        line-height: 40PX;
+        background-color: #ACB3BB;
+        padding-top: 10PX;
+        padding-bottom: 4PX;
+        text-align: center;
+      }
+    }
+  }
+  ul:first-of-type{
+    margin-top: 0PX;
+  }
+  li{
+    list-style-type:none;
+  }
+}
+.inputBox{
+  input{
+    text-align: right;
+    font-size: 30PX !important;
+  }
+}

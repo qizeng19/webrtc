@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "./dist/",
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["es6", "dom"],
+    "sourceMap": true, 
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDir": ".",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "importHelpers": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "~/*": ["*"],
+      "~framework/*": ["framework/*"],
+      "~components/*": ["solution/components/*"],
+      "~model/*": ["solution/model/*"],
+      "~assets/*": ["solution/assets/*"],
+      "~pages/*": ["solution/pages/*"],
+      "~shared/*": ["solution/shared/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "bundle",
+    "webpack.*",
+    "acceptance-tests",
+    "jest"
+  ]
+}

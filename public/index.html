@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+    <%= htmlWebpackPlugin.options.loading.css %>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      console.log(document.getElementById("loading-html"));
+      var id = document.getElementById("loading-html");
+      id && (id.style.display = "none");
+    });
+    // Check that service workers are supported
+    if ("serviceWorker" in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register(`../workboxServiceWorker.js?${new Date()}`);
+      });
+
+    } else {
+      console.log("不支持serviceWorker");
+    }
+  </script>
+</body>
+<script sync type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=&plugin=AMap.PlaceSearch"></script>
+  <script sync src="https://webapi.amap.com/ui/1.1/main.js?v=1.1.1"></script>
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+</html>

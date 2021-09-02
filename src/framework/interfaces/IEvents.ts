@@ -1,0 +1,1 @@
+export type IEventListener = (...args: any[]) => any;
