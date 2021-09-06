@@ -1,6 +1,6 @@
 FROM node:latest
 WORKDIR /app
 COPY . /app
-RUN ls
+RUN npm install
 EXPOSE 9527
 CMD [ "node", "app.js"]

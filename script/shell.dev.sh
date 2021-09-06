@@ -16,7 +16,7 @@ sudo yarn install && sudo yarn build-dev
 
 echo "--> copy files shell.dev.sh"
 sudo cp -rf Dockerfile ./dist
-sudo cp -rf app.js ./dist
+sudo cp -rf server/*.* ./dist
 cd ./dist
 
 echo "--> docker build"
